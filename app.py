@@ -50,7 +50,7 @@ with st.sidebar:
         # 'Chronic Kidney prediction',
         # 'Breast Cancer Prediction',
         # 'Pneumonia Detector',
-        'Malaria Detector',
+         'Malaria Detector',
         'Risk Factor Assessment',
         'Help - ChatBot'
 
@@ -69,7 +69,7 @@ if selected == 'Disease Prediction':
     disease_model.load_xgboost('model/xgboost_model.json')
 
     # Title
-    st.write('# Disease Prediction using Deep Learning')
+    st.write('# Disease Prediction using Deep learning')
 
     symptoms = st.multiselect('What are your symptoms?', options=disease_model.all_symptoms)
 
@@ -802,7 +802,7 @@ if selected == 'Hepatitis prediction':
 
 
 
-# Breast Cancer Prediction Page
+# # Breast Cancer Prediction Page
 # if selected == 'Breast Cancer Prediction':
 #     st.title("Breast Cancer Prediction")
 #     name = st.text_input("Name:")
